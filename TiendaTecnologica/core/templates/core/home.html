@@ -54,18 +54,18 @@
               <a class="nav-link" href="menu/Software.html">Sofware</a>
             </li>-->
             <li class="nav-item">
-              <a class="nav-link" href="menu/Notebooks.html">Notebook</a>
+              <a class="nav-link" href="{% url 'notebooks' %}">Notebook</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="menu/Contacto.html">Contacto</a>
+              <a class="nav-link" href="{% url 'contacto' %}">Contacto</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="menu/AcercaDe.html">Acerca De</a>
+              <a class="nav-link" href="{% url 'acercade' %}">Acerca De</a>
             </li>
             <li class="nav-item">
               <a
                 class="btn btn-outline-light my-2 my-sm-0"
-                href="menu/Registro.html"
+                href="{% url 'registro' %}"
                 style="position: absolute; right: 20px"
                 >Regístrate</a
               >
@@ -73,13 +73,13 @@
             <li class="nav-item">
               <a
                 class="btn btn-outline-light my-2 my-sm-0"
-                href="menu/InicioSesion.html"
+                href="{% url 'iniciosesion' %}"
                 style="position: absolute; right: 120px"
                 >Inicia Sesión</a
               >
             </li>
             <li class="nav-item">
-              <a href="menu/Carrito.html">
+              <a href="{% url 'carrito' %}">
                 <img
                   class="logo-pag"
                   src="../../static/core/img/carro_mini.png"
@@ -783,12 +783,12 @@
 
               <ul class="list-unstyled">
                 <li>
-                  <a href="menu/TerminoCondiciones.html">
+                  <a href="{% url 'terminocondiciones' %}">
                     <img src="../../static/core/img/tyc.png" />Términos y condiciones</a
                   >
                 </li>
                 <li>
-                  <a href="menu/PoliticaPrivacidad.html">
+                  <a href="{% url 'politicaprivacidad' %}">
                     <img src="../../static/core/img/pdp.png" />Políticas de
                     Privacidad</a
                   >

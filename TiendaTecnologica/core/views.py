@@ -44,5 +44,19 @@ def Producto(request, action, id):
     data["list"] = Producto.objects.all().order_by('nombre')
     return render(request, "core/Producto.html", data)
 def hardware(request):
-    return render(request, "core/hardware.html")        
+    return render(request, "core/hardware.html") 
+def acercade(request):
+    return render(request, "core/AcercaDe.html")  
+def contacto(request):
+    return render(request, "core/contacto.html")  
+def iniciosesion(request):
+    return render(request, "core/InicioSesion.html")
+def notebooks(request):
+    return render(request, "core/Notebooks.html")
+def politicaprivacidad(request):
+    return render(request, "core/PoliticaPrivacidad.html")
+def registro(request):
+    return render(request, "core/Registro.html")
+def terminocondiciones(request):
+    return render(request, "core/TerminoCondiciones.html")
 

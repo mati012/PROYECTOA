@@ -60,3 +60,13 @@ def registro(request):
 def terminocondiciones(request):
     return render(request, "core/TerminoCondiciones.html")
 
+
+def poblar_bd(request):
+    Producto.objects.all().delete()
+    Producto.objects.create(IdProducto="AAA", Nombre='HP Omen 15-EN0002LA', Precio="1249990", imagen="images/Asus-TUF NOTEBOOK 3.jpg", categoria=Categoria.objects.get(idCategoria=1))
+    Producto.objects.create(IdProducto="BBB", Nombre='ASUS Chromebook C423NA-WB04', Precio="209900", imagen="images/Noteebook 1.jpg", categoria=Categoria.objects.get(idCategoria=1))
+
+
+
+    return redirect(Producto, action='ins', id = '-1')
+

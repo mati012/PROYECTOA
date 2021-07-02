@@ -2,6 +2,7 @@
 from django.shortcuts import redirect, render
 from .models import Producto, Categoria
 from .forms import ProductoForm
+from django.http import HttpRequest
  
 # Create your views here.
  
@@ -42,4 +43,6 @@ def Producto(request, action, id):
  
     data["list"] = Producto.objects.all().order_by('nombre')
     return render(request, "core/Producto.html", data)
+def hardware(request):
+    return render(request, "core/hardware.html")        
 
